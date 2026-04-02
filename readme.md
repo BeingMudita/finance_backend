@@ -55,8 +55,8 @@ A **production-ready backend system** built with FastAPI for managing financial 
 ## 1️⃣ Clone Repo
 
 ```bash
-git clone https://github.com/<your-username>/finance-dashboard-api.git
-cd finance-dashboard-api
+git clone https://github.com/BeingMudita/finance_backend.git
+cd finance-dashboard
 ```
 
 ---

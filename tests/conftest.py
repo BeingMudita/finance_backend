@@ -45,7 +45,7 @@ def admin_token(client):
     """Log in as the seeded admin and return the raw JWT string."""
     r = client.post(
         "/auth/login",
-        json={"email": "admin@finance.local", "password": "Admin@123!"},
+        json={"email": "admin@example.com", "password": "Admin@123!"},
     )
     assert r.status_code == 200, f"Admin login failed: {r.text}"
     return r.json()["access_token"]

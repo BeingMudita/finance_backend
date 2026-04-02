@@ -1,7 +1,7 @@
 def test_login_success(client):
     r = client.post(
         "/auth/login",
-        json={"email": "admin@finance.local", "password": "Admin@123!"},
+        json={"email": "admin@example.com", "password": "Admin@123!"},
     )
     assert r.status_code == 200
     data = r.json()
@@ -12,7 +12,7 @@ def test_login_success(client):
 def test_login_wrong_password(client):
     r = client.post(
         "/auth/login",
-        json={"email": "admin@finance.local", "password": "WrongPass!"},
+        json={"email": "admin@example.com", "password": "WrongPass!"},
     )
     assert r.status_code == 401
     assert "detail" in r.json()
