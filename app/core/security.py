@@ -6,8 +6,11 @@ from passlib.context import CryptContext
 from app.config import settings
 from app.schemas.auth import TokenData
 
-pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
-
+pwd_context = CryptContext(
+    schemes=["bcrypt"],
+    deprecated="auto",
+    bcrypt__rounds=12
+)
 
 def hash_password(plain_password: str) -> str:
     return pwd_context.hash(plain_password)
