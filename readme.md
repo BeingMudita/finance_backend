@@ -34,7 +34,12 @@ A **production-ready backend system** built with FastAPI for managing financial 
 
 ### 📊 Console Logs
 
-![Dashboard](docs/images/Logs.png)
+![Logs](docs/images/Logs.png)
+
+### 📊 Console Logs
+
+![Logs](docs/images/TestcaseLogs.png)
+
 
 ---
 

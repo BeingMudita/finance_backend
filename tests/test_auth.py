@@ -48,5 +48,5 @@ def test_get_me(client, admin_headers):
     r = client.get("/users/me", headers=admin_headers)
     assert r.status_code == 200
     data = r.json()
-    assert data["email"] == "admin@finance.local"
+    assert data["email"] == "admin@example.com"
     assert data["role"] == "admin"

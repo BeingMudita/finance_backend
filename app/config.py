@@ -10,7 +10,7 @@ class Settings(BaseSettings):
 
     DATABASE_URL: str = "sqlite:///./finance.db"
 
-    FIRST_ADMIN_EMAIL: str = "admin@finance.local"
+    FIRST_ADMIN_EMAIL: str = "admin@example.com"
     FIRST_ADMIN_PASSWORD: str = "Admin@123!"
 
     # Rate limiting
